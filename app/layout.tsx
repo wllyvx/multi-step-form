@@ -25,15 +25,17 @@ export default function RootLayout({
       <head />
       <body className={ubuntu.className}>
         <main>
-          <ul className='flex justify-between'>
-            {steps(1, "/")}
-            {steps(2, "/")}
-            {steps(3, "/")}
-            {steps(4, "/")}
-          </ul>
+          <div className=''>
+            <ul className="flex justify-between">
+              {steps(1, "/")}
+              {steps(2, "/")}
+              {steps(3, "/")}
+              {steps(4, "/")}
+            </ul>
+          </div>
           {children}
         </main>
       </body>
     </html>
-  )
+  );
 }
