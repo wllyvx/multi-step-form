@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'sidebar-mobile' : "url('../public/images/bg-sidebar-mobile.svg')",
+      }
+    },
   },
   plugins: [],
 }
